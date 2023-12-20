@@ -8,7 +8,7 @@ const Nav = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed top-0 z-50 w-full h-[100px] flex justify-between items-center px-4 bg-gray-600 shadow-md shadow-gray-600">
+    <div className="fixed top-0 z-50 w-full h-[100px] flex justify-between items-center px-4 bg-gray-800 shadow-md shadow-gray-600">
       <div className="flex justify-center items-center">
         <img src={mrutopia} alt="Mr.Utopia Logo" className="flex h-16" />
         <p className="flex font-bold text-white mx-12 sm:text-center font-serif text-lg">
@@ -17,7 +17,7 @@ const Nav = () => {
       </div>
       {/*Menu */}
       <ul className="hidden md:flex text-white font-serif font-semibold">
-        <Link to="head" smooth={true} duration={500}>
+        <Link to="about" smooth={true} duration={500}>
           <li className="ml-10 text-sm uppercase cursor-pointer">About</li>
         </Link>
         <Link to="services" smooth={true} duration={500}>
