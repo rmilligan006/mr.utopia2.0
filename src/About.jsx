@@ -4,21 +4,16 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="w-full h-full bg-blue-950" id="about">
-      <div className="sm:grid sm:grid-cols-2 mx-14 py-32">
-        <div className="">
-          <div className="my-2">
-            <motion.h1
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 0.75 }}
-              transition={{ duration: 0.75 }}
-              className="text-white text-5xl sm:py-6 text-center"
-            >
+    <div className="w-full h-full bg-blue-950 pb-14" id="about">
+      <div className="md:grid md:grid-cols-2 mx-14">
+        <div className="py-10">
+          <div className="py-20">
+            <h1 className="text-white text-3xl sm:py-6 text-center">
               Will Catt
-            </motion.h1>
+            </h1>
           </div>
-          <div className="my-6">
-            <p className="text-white text-sm md:text-lg md:px-10 sm:mx-52">
+          <div className="md:px-24 md:text-md">
+            <p className="text-white">
               Will Catt a seasoned appliance technician with over 17 years of
               expertise. In 2014, he took the reins of Mr.Utopia, bringing a
               wealth of experience to every repair. Known for his dedication and
@@ -27,11 +22,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <img
-          src={Fridge}
-          alt="fridge"
-          className="h-[410px] rounded-3xl md:my-10"
-        />
+        <img src={Fridge} alt="fridge" className="h-[500px] w-[500px] my-24" />
       </div>
     </div>
   );
