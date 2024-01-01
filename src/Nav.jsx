@@ -3,13 +3,12 @@ import mrutopia from "./assets/mr.utopia.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 
-
 const Nav = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed top-0 z-50 w-full h-[100px] flex justify-between items-center px-4 bg-blue-950 shadow-md shadow-gray-600">
+    <div className="fixed top-0 z-50 w-full h-[65px] flex justify-between items-center px-4 bg-blue-950 shadow-md shadow-gray-600">
       <div className="flex justify-center items-center">
         <img src={mrutopia} alt="Mr.Utopia Logo" className="flex h-16" />
         <p className="flex font-bold text-white mx-12 sm:text-center font-serif text-lg">
