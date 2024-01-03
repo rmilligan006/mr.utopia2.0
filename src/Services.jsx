@@ -6,11 +6,13 @@ const Services = () => {
   return (
     <div className="w-full h-full bg-gray-300 py-4" id="services">
       <div className="text-4xl">
-        <h1 className="text-center text-gray-700">Services</h1>
+        <h1 className="text-center text-gray-700 font-bold text-4xl pt-4">
+          Services
+        </h1>
       </div>
       <div className="md:grid md:grid-cols-2 mx-10 py-10">
-        <div className="p-2">
-          <div className="bg-blue-950 p-8 py-16 text-white">
+        <div className="">
+          <div className="bg-blue-950 p-8 py-16 text-white w-full h-full">
             <h1 className="sm:px-32 text-md">ABOUT OUR SERVICES</h1>
             <p className=" py-6 sm:px-32 sm:text-lg">
               At Mr. Utopia, excellence is our standard. With a commitment to

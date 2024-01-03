@@ -18,6 +18,7 @@ const Footer = () => {
         <div>
           <p className="text-sm text-center pb-5">
             &copy; {new Date().getFullYear()}
+            <br />
             Mr.Utopia Appliance Repair & Created by Ryan Milligan Designs
           </p>
         </div>
