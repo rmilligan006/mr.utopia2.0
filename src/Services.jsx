@@ -13,7 +13,7 @@ const Services = () => {
       <div className="md:grid md:grid-cols-2 py-10">
         <div className="">
           <div className="bg-blue-950 p-8 py-16 text-white w-full h-full">
-            <h1 className="sm:px-32 text-md">ABOUT OUR SERVICES</h1>
+            <h1 className="sm:px-32 text-md">About Mr.Utopia</h1>
             <p className=" py-6 sm:px-32 sm:text-lg">
               At Mr. Utopia, excellence is our standard. With a commitment to
               prompt, reliable service, Will, will expertly diagnose and fix
