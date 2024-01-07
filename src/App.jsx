@@ -8,7 +8,7 @@ import Footer from "./Footer";
 import { inject } from "@vercel/analytics";
 
 function App() {
-  inject();
+  /*inject();*/
   return (
     <>
       <div className="bg-white">

@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-full pt-4 flex justify-center items-center px-4 bg-blue-950 text-white"
+      className="w-full h-full pt-4 flex justify-center items-center px-4 bg-blue-950 "
     >
       <form
         method="POST"
@@ -23,7 +23,7 @@ const Contact = () => {
           type="text"
           placeholder="Name..."
           name="name"
-          aria-required
+          required
         />
         <input
           className="m-2 p-2"

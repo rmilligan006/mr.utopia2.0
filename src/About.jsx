@@ -6,9 +6,9 @@ const About = () => {
   return (
     <div className="w-full h-full bg-blue-950 py-20" id="about">
       <div className="md:grid md:grid-cols-2 mx-14">
-        <div className="sm:py-32 py-20">
+        <div className="sm:py-32 py-10">
           <div className="">
-            <h1 className="text-white text-3xl sm:py-8 sm:px-32">Will Catt</h1>
+            <h1 className="text-white text-3xl sm:py-2 sm:px-32">Will Catt</h1>
           </div>
           <div className="md:text-md">
             <p className="text-white sm:px-32 text-xl">

@@ -37,9 +37,9 @@ const Services = () => {
           />
         </div>
         <div className="">
-          <div className="sm:py-32 bg-blue-950 p-7 text-white">
+          <div className="sm:py-36 bg-blue-950 p-12 text-white">
             <h1 className="text-xl sm:px-12 pb-8">Dependable Service</h1>
-            <p className="sm:px-12 sm:text-lg sm:text-md">
+            <p className="sm:px-12 sm:text-xl sm:text-md">
               With a deep understanding of top-tier names, Will brings unmatched
               expertise to every repair, ensuring your appliances receive the
               specialized care they deserve. Trust in Will's advanced
