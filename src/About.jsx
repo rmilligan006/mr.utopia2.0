@@ -19,7 +19,7 @@ const About = () => {
               appliance solutions.
             </p>
             <p className="text-white sm:px-32 text-xl py-10">
-              Servicing Alliston, New Techumseh Essa and surrounding area
+              Servicing Alliston, New Tecumseth, Essa and surrounding area.
             </p>
           </div>
         </div>
