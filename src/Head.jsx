@@ -18,6 +18,9 @@ const Head = () => {
         <div className="max-w-screen-lg mx-auto pb-6 flex justify-center">
           <img src={mrutopia} alt="company logo" className="" />
         </div>
+        <div className="text-3xl bg-red-800 font-bold">
+          <p className="text-white">Please be advised, we will be closed from Wednesday Jan 31th to Feb 6th  </p>
+        </div>
         <h1 className="text-2xl md:text-5xl tracking-wide font-bold text-gray-200 p-6">
           Mt.Utopia
         </h1>
