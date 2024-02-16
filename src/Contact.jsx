@@ -30,7 +30,7 @@ const Contact = () => {
           type="tel"
           placeholder="Phone Number. Ex: 999-888-8877"
           name="phone"
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
           required
         />
         <input
