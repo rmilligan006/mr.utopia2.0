@@ -18,7 +18,7 @@ const Head = () => {
         <div className="max-w-screen-lg mx-auto pb-6 flex justify-center">
           <img src={mrutopia} alt="company logo" className="" />
         </div>
-      {/*<div className="w-full h-100 bg-red-700 font-bold text-white text-xl  md:text-3xl"><p>We will be closed Feb 15th to Feb 17th </p></div> */}
+    <div className="w-full h-100 bg-red-700 font-bold text-white text-xl  md:text-3xl"><p>Mr. Utopia's schedule is fully booked until March 7th, and he will be away the following week, returning on March 17th. For urgent service, please contact Zig's Appliance Service at 705-722-9030 or Mr. Appliance Barrie at 705-315-0169</p></div> 
         <h1 className="text-2xl md:text-5xl tracking-wide font-bold text-gray-200 p-6">
           Mr.Utopia
         </h1>
