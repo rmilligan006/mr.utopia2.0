@@ -23,9 +23,9 @@ const Nav = () => {
         <Link to="services" smooth={true} duration={500}>
           <li className="ml-10 text-sm uppercase cursor-pointer">Services</li>
         </Link>
-        <Link to="contact" smooth={true} duration={500}>
+       {/* <Link to="contact" smooth={true} duration={500}>
           <li className="ml-10 text-sm uppercase cursor-pointer">Contact</li>
-        </Link>
+        </Link> */}
       </ul>
       {/* Hamburger */}
       <div onClick={handleClick} className="md:hidden z-10 pr-10 text-white">
@@ -57,11 +57,11 @@ const Nav = () => {
             Services
           </Link>
         </li>
-        <li className="py-6 text-4xl uppercase text-white font-mono">
+        {/*<li className="py-6 text-4xl uppercase text-white font-mono">
           <Link onClick={handleClick} to="contact" smooth={true} duration={600}>
             Contact
           </Link>
-        </li>
+        </li> */}
       </ul>
     </div>
   );
