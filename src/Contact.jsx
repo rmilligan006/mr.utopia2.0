@@ -1,6 +1,17 @@
-import React from "react";
+import { useState } from "react";
 
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = (e) => {
+    if (isSubmitting) {
+      e.preventDefault(); // stop duplicate submission
+      return;
+    }
+
+    setIsSubmitting(true);
+  };
+
   return (
     <div
       name="contact"
@@ -9,22 +20,17 @@ const Contact = () => {
       <form
         method="POST"
         action="https://getform.io/f/45a03aee-398d-4319-bd12-edcbef236059"
-        className="flex flex-col max-w-[600px] w-full
-        "
+        onSubmit={handleSubmit}
+        className="flex flex-col max-w-[600px] w-full"
       >
         <div className="text-white">
-          <p className="text-4xl  font-bold inlinetext-white">Contact</p>
+          <p className="text-4xl font-bold inline text-white">Contact</p>
           <p className="text-white text-2xl py-4">
             // Submit the Form to get in touch
           </p>
         </div>
-        <input
-          className="m-2 p-2"
-          type="text"
-          placeholder="Name..."
-          name="name"
-          required
-        />
+
+        <input className="m-2 p-2" type="text" placeholder="Name..." name="name" required />
         <input
           className="m-2 p-2"
           type="tel"
@@ -33,22 +39,27 @@ const Contact = () => {
           pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
           required
         />
-        <input
-          className="m-2 p-2 "
-          type="text"
-          placeholder="email..."
-          name="email"
-          required
-        />
+        <input className="m-2 p-2" type="text" placeholder="email..." name="email" required />
         <textarea
           name="message"
           rows="10"
-          className=" m-2 p-2"
+          className="m-2 p-2"
           placeholder="message..."
           required
         ></textarea>
-        <button className="text-white border-2 hover:border-yellow-500 ease-in-out duration-300 px-4 py-3 my-8 mx-auto flex items-center">
-          Our trained professionals would love to hear from you!
+
+        <button
+          disabled={isSubmitting}
+          className={`text-white border-2 px-4 py-3 my-8 mx-auto flex items-center
+            ${
+              isSubmitting
+                ? "opacity-50 cursor-not-allowed"
+                : "hover:border-yellow-500 ease-in-out duration-300"
+            }`}
+        >
+          {isSubmitting
+            ? "Sending..."
+            : "Our trained professionals would love to hear from you!"}
         </button>
       </form>
     </div>
