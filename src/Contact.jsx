@@ -2,20 +2,31 @@ import { useState } from "react";
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [morphDone, setMorphDone] = useState(false);
 
   const handleSubmit = (e) => {
     if (isSubmitting) {
-      e.preventDefault(); // stop duplicate submission
+      e.preventDefault();
       return;
     }
 
+    e.preventDefault(); // we temporarily stop the real submit
+
     setIsSubmitting(true);
+
+    // delay to allow the morph animation to play
+    setTimeout(() => {
+      setMorphDone(true);
+
+      // submit the form programmatically after morph checkmark
+      e.target.submit();
+    }, 800);
   };
 
   return (
     <div
       name="contact"
-      className="w-full h-full pt-4 flex justify-center items-center px-4 bg-blue-950 "
+      className="w-full h-full pt-4 flex justify-center items-center px-4 bg-blue-950"
     >
       <form
         method="POST"
@@ -50,16 +61,22 @@ const Contact = () => {
 
         <button
           disabled={isSubmitting}
-          className={`text-white border-2 px-4 py-3 my-8 mx-auto flex items-center
+          className={`relative text-white border-2 px-6 py-3 my-8 mx-auto flex items-center justify-center transition-all duration-300
             ${
               isSubmitting
-                ? "opacity-50 cursor-not-allowed"
-                : "hover:border-yellow-500 ease-in-out duration-300"
+                ? "w-12 h-12 rounded-full !px-0 !py-0"
+                : "hover:border-yellow-500"
             }`}
         >
-          {isSubmitting
-            ? "Sending..."
-            : "Our trained professionals would love to hear from you!"}
+          {isSubmitting ? (
+            morphDone ? (
+              <span className="text-2xl">✔</span>
+            ) : (
+              <div className="w-6 h-6 border-4 border-white border-t-transparent rounded-full animate-spin"></div>
+            )
+          ) : (
+            "Our trained professionals would love to hear from you!"
+          )}
         </button>
       </form>
     </div>
