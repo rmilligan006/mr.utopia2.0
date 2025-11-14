@@ -1,8 +1,12 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+// tailwind.config.js
+module.exports = {
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'ui-sans-serif', 'system-ui'],       // Body, nav, paragraphs
+        heading: ['Manrope', 'ui-sans-serif', 'system-ui'],  // Headings, hero, cards
+        accent: ['Orbitron', 'ui-sans-serif', 'system-ui'],  // Optional hero tagline
+      },
+    },
   },
-  plugins: [],
 };
