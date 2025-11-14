@@ -1,35 +1,65 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Range from "./assets/hood.png";
 import mrutopia from "./assets/mr.utopia.png";
 
 const Head = () => {
   return (
-    <div
+    <header
       id="head"
-      className="w-full h-screen relative flex-col items-center justify-center"
+      className="w-full h-screen relative flex items-center justify-center"
     >
+      {/* Background */}
       <img
         src={Range}
-        alt="background image"
-        className="h-full w-full object-cover =z-0"
+        alt="Background"
+        className="absolute inset-0 w-full h-full object-cover z-0"
       />
-      <div className="absolute w-full h-full top-0 left-0 bg-black/75"></div>
-      <div className="absolute top-0 h-full flex justify-center flex-col text-center w-full m-auto">
-        <div className="max-w-screen-lg mx-auto pb-6 flex justify-center">
-          <img src={mrutopia} alt="company logo" className="" />
-        </div>
-         {/*<div className="w-full h-100 bg-red-700 font-bold text-white text-xl  md:text-3xl"><p>Mr. Utopia will be closed from July 19th, to July 23rd. As well as August 1st to August 11th </p></div> */} 
-        <h1 className="text-2xl md:text-5xl tracking-wide font-bold text-gray-200 p-6">
+      <div className="absolute inset-0 bg-black/60 z-10"></div>
+
+      {/* Content */}
+      <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-6">
+        {/* Logo */}
+        <motion.img
+          src={mrutopia}
+          alt="Mr.Utopia Logo"
+          className="w-48 md:w-64 mb-6"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        />
+
+        {/* Headline */}
+        <motion.h1
+          className="text-3xl md:text-6xl font-heading text-gray-200 mb-4 tracking-wide"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.3 }}
+        >
           Mr.Utopia
-        </h1>
-        <h2 className="text-xl md:text-3xl tracking-wide font-bold text-gray-200 p-4">
+        </motion.h1>
+
+        {/* Subheadline */}
+        <motion.h2
+          className="text-xl md:text-3xl font-sans text-gray-200 mb-2 tracking-wide"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
           Friendly and reliable service established in 1995
-        </h2>
-        <h3 className="text-lg md:text-2xl tracking-wide font-bold text-gray-200 p-2">
+        </motion.h2>
+
+        {/* Tagline */}
+        <motion.h3
+          className="text-lg md:text-2xl font-accent text-gray-200 tracking-wide"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.7 }}
+        >
           "We fix it like we own it!"
-        </h3>
+        </motion.h3>
       </div>
-    </div>
+    </header>
   );
 };
 
