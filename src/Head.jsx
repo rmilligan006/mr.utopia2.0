@@ -29,7 +29,7 @@ const Head = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     />
- <div className="w-full h-100 bg-red-700 font-bold text-white text-xl  md:text-3xl"><p>Mr.Utopia will be from Dec 24th to Dec 29th. An closing early on Dec 31st and open back on Jan 2nd.</p></div>  
+ <div className="w-full h-100 bg-red-700 font-bold text-white text-xl  md:text-3xl"><p>Mr.Utopia will be closed  from Dec 24th to Dec 29th. An closing early on Dec 31st and open back on Jan 2nd.</p></div>  
     {/* Headline */}
     <motion.h1
       className="text-3xl md:text-6xl font-heading text-gray-200 mb-4 tracking-wide"
