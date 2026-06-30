@@ -92,7 +92,7 @@ const Contact = () => {
         ></textarea>
 
         {/* Submit Button */}
-        {/*<button
+      <button
           type="submit"
           disabled={isSubmitting}
           className={`relative text-white border-2 px-6 py-3 my-8 mx-auto flex items-center justify-center font-heading font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg
@@ -111,7 +111,7 @@ const Contact = () => {
           ) : (
             "Our trained professionals would love to hear from you!"
           )}
-        </button> */}
+        </button>
       </form>
 
       {/* Gradient & Particle Animations */}
